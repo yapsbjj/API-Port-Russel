@@ -1,0 +1,105 @@
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/catway
+
+###
+
+GET http://localhost:3000/reservation
+
+###
+
+GET http://localhost:3000/users/15
+
+###
+
+GET http://localhost:3000/catway/15
+
+###
+
+GET http://localhost:3000/reservation/15
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Ramdane",
+    "email": "ramdane@gmail.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:3000/catway
+Content-Type: application/json
+
+{
+    "catwayNumber": "162B",
+    "type": "long",
+    "catwayState": "en maintenance"
+}
+
+###
+POST http://localhost:3000/reservation
+Content-Type: application/json
+
+{
+    "catwayNumber": "162",
+    "clientName": "Tess Tickle",
+    "boatName": "L Agora",
+    "checkIn": "2024-11-19",
+    "checkOut": "2024-11-21"
+}
+
+###
+
+GET http://localhost:3000/users/673cacd0534046ab22e682a1
+
+###
+
+GET http://localhost:3000/catway/6635dd51cac42ea5c49d71bd
+
+###
+GET http://localhost:3000/reservation/66451dc410eae06122714ff1
+
+###
+
+DELETE http://localhost:3000/users/673cacd0534046ab22e682a1
+
+###
+
+DELETE http://localhost:3000/catway/6635dd51cac42ea5c49d71bd
+
+###
+
+DELETE http://localhost:3000/reservation/66451dc410eae06122714ff1
+
+###
+
+PATCH http://localhost:3000/users/67409bf033e6d0266ce4bced
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
+
+###
+
+PATCH http://localhost:3000/catway/6635dd51cac42ea5c49d71be
+Content-Type: application/json
+
+{
+    "type": "long"
+}
+
+###
+
+PATCH http://localhost:3000/reservation/66451dc410eae06122714ff0
+Content-Type: application/json
+
+{
+    "boatName": "Akatsuki"
+}
